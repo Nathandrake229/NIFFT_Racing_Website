@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Timeline | NIFFT Racing</title>
+	<link rel="shortcut icon" href="img/logo.png">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<script>
+		var i = 6;
+		function yHandler(){
+			var s = "B1/"+i+".jpg";
+			var wrap = document.getElementById('wrap');
+			var contentHeight = wrap.offsetHeight;
+			var yOffset = window.pageYOffset;
+			var y = yOffset + window.innerHeight;
+			if(y >= contentHeight){
+				if(i<78) {
+					wrap.innerHTML += "<div><img src="+s+"></div>17 February 2013 | NATRAX Indore<hr>";
+					i=i+1;
+				}
+			}
+		}
+		window.onscroll = yHandler;
+	</script>
+	<style>
+		@font-face {
+			font-family: 'Fert';
+			src: url('Fertigo Pro Regular.ttf');
+		}
+		.no-js #loader{display:none;}
+		.js #loader{display:block;position:absolute;left:100px;top:0;}
+		.se-pre-con{position:fixed;left:0px;top:0px;width:100%;height:auto;z-index:9999;background-size:600px 600px;background-color:rgba(128, 128, 128, 0.90);}
+		a {
+			color:white;
+		}
+		a:hover{
+			color:white;
+			text-decoration:none;
+		}
+		#time p{
+			text-align:center;
+		}
+	</style>
+</head>
+<body style="background-color:#222;font-family:Fert,Arial;font-size:16px;color:white;">
+
+	<div class="se-pre-con" style="height:100vh;display: flex;align-items: center;justify-content: center;">
+		<div>
+			<div class="row" style="display: flex;align-items: center;justify-content: center;">
+				<img src="img/logo_l.png">
+			</div>
+			<div class="row" style="display: flex;align-items: center;justify-content: center;">
+				<img src="img/ani1.gif">
+			</div>
+		</div>
+	</div>
+	
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="http://www.nifft-racing.in" class="navbar-brand" style="padding:0px 15px;"><img src="img/logo.png"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="example">
+				<ul id="navi" class="nav navbar-nav navbar-right" style="float: right;">
+					<li style="text-align:center;"><a href="http://www.nifft-racing.in">Home</a></li>
+				</ul>
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div id="wrap" style="text-align:center;margin-top:60px;">
+			<h1>BAJA SAE 2013</h1>
+			<div><img src="B1/1.jpg"></div>17 February 2013 | NATRAX Indore<hr>
+			<div><img src="B1/2.jpg"></div>17 February 2013 | NATRAX Indore<hr>
+			<div><img src="B1/3.jpg"></div>17 February 2013 | NATRAX Indore<hr>
+			<div><img src="B1/4.jpg"></div>17 February 2013 | NATRAX Indore<hr>
+			<div><img src="B1/5.jpg"></div>17 February 2013 | NATRAX Indore<hr>
+		</div>
+	</div>
+	
+	<div id="time" style="position:fixed;left:5%;top:250px;"><p>TIMELINE</p>
+		<ul>
+			<li>
+				2018
+				<ul>
+				<li>BAJA SAE 2018</li>
+				</ul>
+			</li>
+			<li><a href="http://www.nifft-racing.in/tB2.html">2017</a></li>
+			<li>
+				2016
+				<ul>
+				<li><a href="http://www.nifft-racing.in/tS2.html">SUPRA SAE 2016</a></li>
+				</ul>
+			</li>
+			<li>
+				2015
+				<ul>
+				<li><a href="http://www.nifft-racing.in/tS1.html">SUPRA SAE 2015</a></li>
+				</ul>
+			</li>
+			<li>
+				2013
+				<ul>
+					<li><a href="http://www.nifft-racing.in/tF.html">FSAE Italy 2013</a></li>
+					<li><a href="http://www.nifft-racing.in/tB1.html">BAJA SAE 2013</a></li>
+				</ul>
+			</li>	
+		</ul>
+	</div>
+	
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+			$(".se-pre-con").fadeOut("slow");;
+         });
+    </script>
+	
+</body>
+</html>
+	
